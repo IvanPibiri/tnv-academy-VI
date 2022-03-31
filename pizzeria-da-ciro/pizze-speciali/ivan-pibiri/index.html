@@ -1,75 +1,91 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="/pizzeria-da-ciro/pizze-speciali/ivan-pibiri/styles/style.css">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display&display=swap" rel="stylesheet">
+
+        <title>Pizza Ivan</title>
     </head>
     <body>
-        <a href="/pizzeria-da-ciro/index.html">back</a>
+        <a class="back-button" href="/pizzeria-da-ciro/index.html">back</a>
         
-        <h1>PIZZA IVAN</h1>
+        <div class="title">
+            <h1>PIZZA IVAN</h1>
+        </div>
         
-        <img src="/pizzeria-da-ciro/pizze-speciali/ivan-pibiri/assets/brenan-greene-HPZs4EXRFSU-unsplash.jpg" alt="esempio pizza" width="375" height="250"/>
+        <section>
+        <div class="subtitle">
+            <h2>Descrizione della pizza:</h2>
+            <p>Pizza con ingredienti di mare, solitamente bianca e col pesto.</p>
+        </div>
+
+        <div class="pizza-esempio">
+            <img src="/pizzeria-da-ciro/pizze-speciali/ivan-pibiri/assets/brenan-greene-HPZs4EXRFSU-unsplash.jpg" alt="pizza-esempio">
+        </div>
+
+        <div class="ingredients">
+            <h2>Ingredienti</h2>
+            <ul>
+                <li><a href="https://it.wikipedia.org/wiki/Pomodoro_di_Pachino">Pomodorini</a></li>
+                <li><a href="https://it.wikipedia.org/wiki/Octopus_vulgaris">Polpo</a></li>
+                <li><a href="https://it.wikipedia.org/wiki/Pesto_alla_genovese">Pesto</a></li>
+                <li><a href="https://it.wikipedia.org/wiki/Todarodes_sagittatus">Totani</a></li>
+            </ul>
+        </div>
+        </section>
+
+        <section class="video-table">
+        <div class="video_impasto">
+            <h3>Ecco un video su come impastare la pasta della pizza!</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IlKb6LpRNxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="block-video-table">
+            <img class="ingredienti-pizza-pesto" src="/pizzeria-da-ciro/pizze-speciali/ivan-pibiri/assets/pexels-pixabay-33249.jpg" alt="ingredienti-pizza-pesto">
+        </div>
+
+        <div class="table_nutrients">
+            <h2>Tabella Valori Nutrizionali</h2>
+            <table>
+                <tr>
+                    <th>Tipologia</th>
+                    <th>Quantità</th>
+                    <th>RDA</th>
+                </tr>
+                <tr>
+                    <td>Carboidrati</td>
+                    <td>350g</td>
+                    <td>55%</td>
+                </tr>
+                <tr>
+                    <td>Grassi</td>
+                    <td>45g</td>
+                    <td>8%</td>            
+                </tr>
+                <tr>
+                    <td>Proteine</td>
+                    <td>150g</td>
+                    <td>30%</td>    
+                </tr>
+            </table>
+        </div>
+        </section>
         
-        <br>
-        
-        <h2>Descrizione della pizza:</h2>
-        <p>Pizza con ingredienti di <strong>mare</strong>, solitamente bianca e col pesto.</p>
-        
-        <br>
-
-        <h2>Ingredienti</h2>
-        <ul>
-            <li><a href="https://it.wikipedia.org/wiki/Pomodoro_di_Pachino">Pomodorini</a></li>
-            <li><a href="https://it.wikipedia.org/wiki/Octopus_vulgaris">Polpo</a></li>
-            <li><a href="https://it.wikipedia.org/wiki/Pesto_alla_genovese">Pesto</a></li>
-            <li><a href="https://it.wikipedia.org/wiki/Todarodes_sagittatus">Totani</a></li>
-        </ul>
-
-        <br>
-
-        <h3>Ecco un video su come impastare la pasta della pizza!</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/IlKb6LpRNxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <br>
-
-        <h2>Tabella Valori Nutrizionali</h2>
-        <table border="2">
-            <tr>
-                <th>Tipologia</th>
-                <th>Quantità</th>
-                <th>RDA</th>
-            </tr>
-            <tr>
-                <td>Carboidrati</td>
-                <td>350g</td>
-                <td>55%</td>
-            </tr>
-            <tr>
-                <td>Grassi</td>
-                <td>45g</td>
-                <td>8%</td>            
-            </tr>
-            <tr>
-                <td>Proteine</td>
-                <td>150g</td>
-                <td>30%</td>    
-            </tr>
-        </table>
-
-        <br>
-
-        <fieldset>
+        <footer class="fieldset">
+            <div class="radio">
             <legend>Dai un voto da 1 a 5 a questa pizza:</legend>
             <input type="radio" id="one" name="voto"> 1
             <input type="radio" id="two" name="voto"> 2
             <input type="radio" id="three" name="voto"> 3
             <input type="radio" id="four" name="voto"> 4
             <input type="radio" id="five" name="voto"> 5
-
-            <br><br>
+            </div>
 
             <textarea name="recensione" rows="7" cols="36">Lascia una recensione</textarea>
-        </fieldset>    
+        </footer>    
         
     </body>
 </html>
