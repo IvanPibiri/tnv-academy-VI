@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Ricetta Al Paci</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><button> <a href="./../../index.html">Menu</a></button></li>
+            <li><button> <a href="./index.html">Pizza Al Paci</a></button></li>
+        </ul>
+    </nav>
+    <header><h1>Ricetta Pizza<br> Al Paci</h1></header>
+    <main>
+        <section class="ingr">
+            <form id="form1" >
+                <label>Numero di Pizze</label>
+                <input type="number" id="pizze" placeholder="1">
+                <input type="button" onclick="myFunction()" value="calculate">
+            </form>
+        
+            <h3>Dosi per <span id="numero">1</span> pizze da 26cm</h3>
+            <h4>Base Pizza</h4>
+            <ul>
+                <li>Farina 0 - <span id="farina">150</span>g</li>
+                <li>Acqua - <span id="acqua">110</span>ml</li>
+                <li>Lievito madre - <span id="lievito">45</span>g</li>
+                <li>Zucchero - <span id="zucchero">2.5</span>g</li>
+                <li>Olio - <span id="olio">10</span>ml</li>
+                <li>Sale <span id="sale">5</span>g</li>
+            </ul>
+            <h4>Condimenti</h4>
+            <ul>
+                <li>Mozzarella di bufala - <span id="mozzarella">100</span>g</li>
+                <li>Salsiccia fresca - <span id="salsiccia">90</span>g </li>
+                <li>Friarielli - <span id="friarielli">100</span>g</li>
+                <li>Olio Piccante - q.b.</li>
+            </ul>
+        </section>
+
+        <section class="steps">
+            <h4>Passaggi</h4>
+            <ol>
+                <li>Unite il lievito madre e lo zucchero all acqua e fate scigliere per bene. Successivamente a pioggia amalgamate anche le due farine. <br>
+                    A questo punto unite l olio e il sale e lavorate l impasto sino ad ottenere una superfice liscia. Lasciate lievitare almeno  un paio di ore.</li>
+                <li> Finita la lievitazione dividete l impasto in due pezzi e stendete in una forma circolare aiutandovi con un mattarello se non riuscite a mano.</li>
+                <li>Spargete tocchetti di mozzarella di bufala, salsiccia e friarelli su tutta la superfice ed infornate facendo attenzione che non si bruci.</li>
+                <li>E' arrivato il momento di mangiare, godetevi i frutti del vostro lavoro!</li>
+            </ol>
+        </section>
+    </main>
+    <script src="./Script/main.js"></script>
+</body>
+</html>

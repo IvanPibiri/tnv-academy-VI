@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding:0;
+    border:0;
+}
+p {
+    font-family: 'SovjetBoxSCSmallCaps';
+    font-weight: bold;
+    font-style: normal;
+ }
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Staatliches', cursive;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+form {
+    border: 1px solid #000;
+    padding: 16px;
+}
+
+fieldset {
+    margin: 16px 0;
+}
+
+#header {
+    background-image: url(/pizzeria-da-ciro/pizze-speciali/styles/pizzagrind.jpg);
+    height:auto;
+    background-size: contain;
+}
+
+#header h1 {
+    text-align: center;
+    font-size: 5em;
+    color: rgb(194, 29, 29);
+    letter-spacing: 0.1em;
+    padding-top: 64px;
+    text-shadow: 5px 5px 0 rgb(60, 175, 15);
+    font-family: 'SovjetBoxSCSmallCaps';
+    margin: 0;
+}
+
+
+.claim {
+    text-align: center;
+    margin-top: 0;
+    padding: 0 18px;
+    font-size: 3em;
+    background: #fff;
+    font-style: italic;
+    border-left: 16px solid green;
+    border-right: 16px solid red;
+    box-shadow: 5px 5px 0 black;
+
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu ul {
+    padding: 0;
+}
+
+.menu ul li {
+    list-style-type: none;
+}
+
+input {
+    margin: 4px 0;
+}
+
+textarea {
+    width: 100%;
+}
+
+input[type=submit] {
+    background: #f5f5f5;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 32px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background: lightgreen;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.price {
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+/* Classi di Utility */
+.underline {
+    text-decoration: underline;
+}

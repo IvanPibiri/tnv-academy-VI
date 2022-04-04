@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,700;0,900;1,600&display=swap"
+    rel="stylesheet">
+  <title>La Simone Maffa</title>
+  <link rel="stylesheet" href="./style/simone_maffa_style.css">
+</head>
+
+<body>
+
+  <div class="image">
+    <div class="topnav" id="top-nav-bar">
+      <a href="#home">Home</a>
+      <a href="/pizzeria-da-ciro/index.html">Menu</a>
+      <a href="#contatti">Contatti</a>
+      <a href="#Chi siamo">Chi siamo</a>
+      <a href="javascript:void(0);" class="icon" onclick="ShowIcon()">&#9776;</a>
+    </div>
+
+    <div class="caption">
+      <span class="title">La Simone Maffa</span>
+      <div id="wrapper">
+        <a href="#section2" class="button" id="scroll_down"><span>Scopri gli ingredienti!</span></a>
+      </div>
+    </div>
+  </div>
+
+  <section id="section2">
+    <div class="row">
+      <div class="column">
+        <div class="images">
+          <img src="/pizzeria-da-ciro/pizze-speciali/simone-maffa/assets/fichi.jpg" alt="fichi" style="width:100%">
+        </div>
+        <div class="images"><img src="/pizzeria-da-ciro/pizze-speciali/simone-maffa/assets/grana.jpg" alt="grana"
+            style="width:100%"> </div>
+      </div>
+
+      <div class="column">
+        <div class="images">
+          <img src="/pizzeria-da-ciro/pizze-speciali/simone-maffa/assets/noci.jpg" alt="noci" style="width:100%">
+        </div>
+        <div class="images">
+          <img src="/pizzeria-da-ciro/pizze-speciali/simone-maffa/assets/Prosciutto_crudo.jpg" alt="prosciutto crudo"
+            style="width:100%">
+        </div>
+        <div class="images">
+          <img src="/pizzeria-da-ciro/pizze-speciali/simone-maffa/assets/rucola.jpg" alt="rucola" style="width:100%">
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="ingredients_container">
+          <p>Ingredienti:</p>
+          <ul id="list">
+            <li><a class="ingredients" href="https://it.wikipedia.org/wiki/Ficus">Fichi</a></li>
+            <li><a class="ingredients" href="https://it.wikipedia.org/wiki/Grana_Padano">Scaglie di grana</a></li>
+            <li><a class="ingredients" href="https://it.wikipedia.org/wiki/Noce_(frutto)">Granella di noci</a></li>
+            <li><a class="ingredients" href="https://it.wikipedia.org/wiki/Prosciutto_crudo">Prosciutto crudo</a></li>
+            <li><a class="ingredients" href="https://it.wikipedia.org/wiki/Eruca_vesicaria">Rucola</a></li>
+          </ul>
+
+          <div class="table_container">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="table-head" colspan="2">Tabella nutrizionale</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table-name-row">Valori medi</td>
+                  <td class="table-value">Per 100g</td>
+                </tr>
+                <tr>
+                  <td class="table-name-row">Energia</td>
+                  <td class="table-value">987 kJ<br>235kcal</td>
+                </tr>
+                <tr>
+                  <td class="table-name-row">Grassi<br>di cui acidi grassi saturi</td>
+                  <td class="table-value">6,6 g<br>3,1g</td>
+                </tr>
+                <tr>
+                  <td class="table-name-row">Carboidrati<br>di cui zuccheri</td>
+                  <td class="table-value">33g<br>2,0g</td>
+                </tr>
+                <tr>
+                  <td class="table-name-row">Proteine</td>
+                  <td class="table-value">9,7 g</td>
+                </tr>
+                <tr>
+                  <td class="table-name-row">Sale</td>
+                  <td class="table-value">1,4</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Creato da Simone Maffa - TNV VI EDIZIONE</p>
+    </div>
+  </section>
+
+  <script>
+    function ShowIcon() {
+      var x = document.getElementById("top-nav-bar");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+</html>

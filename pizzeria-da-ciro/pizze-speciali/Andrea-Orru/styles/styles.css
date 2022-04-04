@@ -1,0 +1,93 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0px auto;
+    padding: 0px auto;
+    border: 0px auto;
+    background-color: black;
+}
+.header{
+    background-image: url('../assets/pizza\ napoletana.jpg ');
+    background-size: cover;
+    height: 750px;  
+    
+        
+}
+
+
+.header h1 {
+    color: rgb(160, 184, 43); 
+    font-size: 10em; 
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align:center;
+}
+.medio {
+    background-image: url('../assets/impasto-pizza-napoletana-720x480.jpg');
+    color: rgb(160, 184, 43);
+    text-align: center;  
+    width: 1350px;
+    height: 550px;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+
+.medio h2 {
+    font-size: 2em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.medio ol {
+    list-style: none;
+}
+.medio ol li {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.bottom {
+    background-image: url('../assets/pronta.webp');
+    height: 450px;
+    width: 1350px;
+    background-position:center ;
+    background-repeat:no-repeat;
+    background-size: cover;  
+    
+}
+
+.medio ul {
+    list-style-type: none;
+
+}
+.medio .scelta {
+    color: black;
+}
+.medio .scelta h2 {
+    font-size: 2em;
+    text-shadow: none;
+}
+#pulsante {
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 10px 20px;
+    border: solid 1px #0076a3;
+    background: #0095cd;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+#pulsante:hover {
+    background: #0078a5;
+}
+#pulsante:active {
+    position: relative;
+    top: 1px;
+}
+.bottom .contact h3, h4 {
+    text-align: center;
+    top: 100px;
+    margin: 30px;
+
+}
+
