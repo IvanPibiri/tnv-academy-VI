@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Pizza fObiA</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <!-- Intestazione -->
+    <body bgcolor=”#c88801f”>
+    <body style="background-image:url(wood_background.jpg)">
+    <a href=".//">Pizza Michele</a>
+    <h1>Pizza speciale fObiA</h1>
+    <h4>Una pizza... da paura! Un olezzo che temeranno anche i tuoi vicini</h4>
+    <img src="pizza_fobia.jpg" width="800" height="400" alt="pizza fObiA">
+    
+    <!-- Ingredienti -->
+    <h2>Ingredienti</h2>
+
+    <ul>
+        <li><a href="https://it.wikipedia.org/wiki/Fior_di_latte">Mozzarella fior di latte</a></li>
+        <li><a href="https://it.wikipedia.org/wiki/Camembert_(formaggio)">Camembert de Normandie</a></li>
+        <li><a href="https://it.wikipedia.org/wiki/Gorgonzola">Gorgonzola</a></li>
+        <li><a href="https://it.wikipedia.org/wiki/Puzzone_di_Moena">Puzzone di Moena</a></li>
+        <li><a href="https://it.wikipedia.org/wiki/Roquefort_(formaggio)">Roquefort</a></li>
+        <li><a href="https://it.wikipedia.org/wiki/Piper_nigrum">Pepe nero</a></li>
+    </ul>
+
+    <!-- Ricetta -->
+    <h2>Ricetta</h2>
+
+    <ol type="a">
+        <li>Versare la farina in una ciotola.</li>
+        <li>Sbriciolare il lievito all'interno e versare un po' della dose di acqua.</li>
+        <li>Mescolare con un mestolo di legno e aggiungere lentamente l'acqua.</li> 
+        <li>Continuare sempre a mescolare e aggiungere anche il sale.</li>
+        <li>Unire l'acqua rimasta sino ad ottenere un composto omogeneo <br> 
+            e trasferire l’impasto sul piano da lavoro e lavorarlo fino a che non sarà liscio.</li>
+        <li>Lasciarlo riposare sul piano di lavoro per una decina di minuti e dare una piccola piega.</li>
+        <li>Dare la forma di una sfera e trasferire l'impasto in una <br>
+            ciotola coperto con pellicola trasparente.</li>
+        <li>Lasciare lievitare fino a raddoppiare il volume.</li>
+        <li>Trasferire l'impasto sul piano da lavoro e farlo girare con le mani fino <br>
+            ad ottenere una sfera liscia e regolare.</li> 
+        <li>Trasferire il panetto in una cassetta per pizza precedentemente unta e coprire con il coperchio.</li>
+        <li>Lasciare riposare per altri 30 minuti prima di poter tirare l’impasto <br>
+            per la pizza e condirlo con la mozzarella e i quattro formaggi.</li>
+        <li>Infornare e, a cottura ultimata, aggiungere un filo d'olio e pepe nero q.b.</li>
+    </ol>
+
+    <!-- Tabella valori nutrizionali -->
+    <h2>Valori Nutrizionali</h2>
+    
+    <table border="2">
+    <caption>
+        <p>Tabella</p>
+    </caption>
+        <tr>
+            <th>Tipologia</th>
+            <th>Quantità</th>
+            <th>RDA</th>
+        </tr>
+        <tr>
+            <td>Carboidrati</td>
+            <td>250g</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>Zuccheri</td>
+            <td>100g</td>
+            <td>10%</td>            
+        </tr>
+        <tr>
+            <td>Proteine</td>
+            <td>100g</td>
+            <td>10%</td>    
+        </tr>
+        <tr>
+            <td>Grassi</td>
+            <td>250g</td>
+            <td>80%</td>
+        </tr> 
+        <tr> 
+            <td>di cui Saturi</td>
+            <td>150g</td>
+            <td>100%</td>
+        </tr>
+    </table>
+
+    <!-- Commenti cliente -->
+    <div>
+    <h2>Commenti</h2>
+        <form action="commenta.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br>
+            <label for="cognome">Cognome:</label>
+            <input type="text" id="cognome" name="cognome"><br>
+            <label>Lascia il tuo commento su questa pizza!</label><br>
+            <textarea rows="10" cols="48"></textarea><br><br>
+
+            <input type="submit" value="Invia il commento">
+
+        </form>
+    </div>
+    <br>
+
+    <!-- Back button -->
+    <form>
+        <input type="button" value="Torna indietro" 
+        onClick="history.go(-1);return true;" 
+        name="button">
+    </form>
+</body>
+</html>
