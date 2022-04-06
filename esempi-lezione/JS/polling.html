@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Polling</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>ISS Tracker</h1>
+        <span>Latitude:</span> <span id="lat"></span><br>
+        <span>Longitudine:</span> <span id="lon"></span>
+    </div>
+    <script>
+        function updateISSPosition() {
+            const response = fetch('http://api.open-notify.org/iss-now.json');
+
+            response
+                .then(res => res.json())
+                .then(res => updatePage(res));
+
+            function updatePage(issData) {
+                const latElement = document.getElementById('lat');
+                const lonElement = document.getElementById('lon');
+
+                latElement.innerText = issData.iss_position.latitude;
+                lonElement.innerText = issData.iss_position.longitude;
+            }
+        }
+
+        setInterval(() => updateISSPosition(), 2000);
+    </script>
+</body>
+
+</html>
