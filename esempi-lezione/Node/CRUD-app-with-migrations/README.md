@@ -46,7 +46,7 @@ sequelize model:generate --name Movie --attributes title:string,author:string,ye
 Applichiamo la migration, verrà creata la tabella nel DB
 
 ```bash
-db:migrate
+sequelize db:migrate
 ```
 
 Opzionalmente creiamo dei seed per il popolamento iniziale dei dati
