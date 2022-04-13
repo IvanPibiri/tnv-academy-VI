@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pizza speciale</title>
+        <link rel="stylesheet"  href="style/style.css">
+    </head>
+    <body>     
+        <div id="header">  
+            <h1>Pizza speciale Michele Lai</h1>
+            <p>
+                Pizza con <strong>pochi</strong> ingredienti<br>
+                di qualità <strong>discutibile</strong> e dubbia provenienza,<br>
+                per chi si sa <strong>accontentare</strong>.            
+            </p>
+        </div> 
+        <div id="details">
+            <h2>Ingredienti</h2>
+                <button>
+                    <input type="checkbox" name="pomodoro" checked="checked" class="checkmark">Pomodoro <a href="https://it.wikipedia.org/wiki/Solanum_lycopersicum" target="_blank">(vedi dettagli)</a></input><br>
+                    <input type="checkbox" name="pomodoro" checked="checked" class="checkmark">Mozzarella <a href="https://it.wikipedia.org/wiki/Mozzarella" target="_blank">(vedi dettagli)</a></input><br>
+                    <input type="checkbox" name="pomodoro" checked="checked" class="checkmark">Basilico <a href="https://it.wikipedia.org/wiki/Ocimum_basilicum" target="_blank">(vedi dettagli)</a></input><br>       
+                </button>
+            <!--Tabella valori nutrizionali-->
+            <h2>Valori nutrizionali</h2>
+            <table>
+                <!--Nomi colonne-->
+                <tr>
+                    <th class="nutriente">Nutriente</th>
+                    <th class="quantità">Quantità</th>
+                </tr>
+                <!--Riempimento colonne-->
+                <tr>
+                    <td class="nutriente">Proteine</td>
+                    <td class="quantità">24 g</td>
+                </tr>
+                <tr>
+                    <td class="nutriente">Grassi</td>
+                    <td class="quantità">18 g</td>
+                </tr>
+                <tr>
+                    <td class="nutriente">Carboidrati</td>
+                    <td class="quantità">156 g</td>
+                </tr>
+            </table>
+            <!--Maggiori info-->
+            <h2>Maggiori informazioni</h2>
+            <form action="informazioni.php" method="POST">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome"><br>
+                <label for="cognome">Cognome:</label><br>
+                <input type="text" id="cognome" name="cognome"><br>
+                <label for="indirizzo">Indirizzo:</label><br>
+                <input type="text" id="indirizzo" name="indirizzo" /><br>
+                <label>Scrivi la tua richiesta</label><br>
+                <textarea rows="7" cols="36"></textarea><br>
+            </div>
+        <!--Return to the homepage-->
+        <a id="homepage" href="/pizzeria-da-ciro/">Back to homepage</a>
+    </body>
+</html>

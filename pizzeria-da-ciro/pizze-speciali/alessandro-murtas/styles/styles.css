@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=RocknRoll+One&family=Work+Sans:wght@900&display=swap');
+
+body {
+    margin-top: 0;
+    font-family: 'RocknRoll One', sans-serif;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: darksalmon;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: lavender;
+    padding: 16px;
+    text-decoration: wavy;
+}
+
+.sidebar a:hover {
+    background-color: chocolate;
+    color: black;
+}
+
+.wrapper {
+    margin: 10px, 20px, 40px, 50px;
+    max-height: 100%;
+    margin-left: 200px;
+    text-align: center;
+    background-color: antiquewhite;
+    
+}
+
+.recipe {
+    background-image: url('../assets/aries-sunrise-yoga.jpg');
+    background-size:auto;
+    padding-left: 15px;
+}
+
+.recipe ul {
+    list-style: none;
+    color: rgb(228, 113, 11);
+}
+
+#title {
+    color: brown;
+}
+
+table {
+    color: chocolate;
+}
+
+td{
+    color:crimson;
+}
+
+div.image {
+    margin:auto;
+    width: 150px;
+    height: 150px;
+    background-image: url('../assets/722e8a9ae0ed3cab308303fb20fb310a.jpg');
+}
+
+/*
+.container {
+    margin: 0;
+    position: relative;
+    
+    
+}
+
+div.content {
+    /*font-family: 'Roboto', sans-serif;
+    /*margin-top: 1px;
+    text-align: center;
+    align-items:center;
+    max-width: 100%;
+    max-height: 100%;
+    background-image: url('../assets/aries-sunrise-yoga.jpg');
+    image-rendering:auto;
+    /*background-image:url('../assets/light.jpg');
+    margin: 0;
+}
+
+.recipe {
+    image-rendering: auto;
+}
+
+.sidebar {
+    
+}
+
+
+
+
+
+#img {
+    background: url('../assets/722e8a9ae0ed3cab308303fb20fb310a.jpg');
+}

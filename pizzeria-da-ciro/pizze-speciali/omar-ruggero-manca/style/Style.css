@@ -1,0 +1,92 @@
+body{
+    font-family: "Lucida Console", monospace;    
+    background-color: rgb(0, 0, 0); 
+    background-image:url(https://images.unsplash.com/photo-1610824224972-db9878a2fe2c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d29vZCUyMHRleHR1cmV8ZW58MHx8MHx8&w=1000&q=80);  
+    text-align: center;
+}
+
+h1 {
+    color: rgba(240, 248, 255, 0.856);
+    text-shadow: 2px 2px rgb(0, 0, 0); 
+    font-size: 60px;    
+}
+
+.go_back{
+    background-color: rgba(255, 255, 255, 0.774);
+    color: black;
+    border: 2px solid #e7e7e70e;
+    cursor: pointer;
+    
+}
+
+h2{
+    color: rgba(240, 248, 255, 0.856);
+    text-shadow: 2px 2px rgb(0, 0, 0); 
+    text-align: center;
+    font-size: 40px;     
+}
+
+h3{
+    color: rgba(240, 248, 255, 0.856);
+    text-shadow: 2px 2px rgb(0, 0, 0); 
+    text-align: center;
+    font-size: 20px; 
+       
+}
+
+.ricetta{
+    margin-top: 100px;    
+}
+
+.ingredienti{
+    margin-top: 770px;
+}
+
+p{
+    color: rgba(240, 248, 255, 0.856);
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;    
+}
+
+ul{
+    color: rgba(240, 248, 255, 0.856); 
+    text-shadow: 2px 2px rgb(0, 0, 0);    
+    margin-top: 10px;    
+    list-style: none;
+    cursor: pointer;    
+}
+
+ol{
+    color: rgba(240, 248, 255, 0.856);  
+    text-shadow: 2px 2px rgb(0, 0, 0);   
+    margin-top: 10px;
+    list-style: none;
+}
+
+a{
+    color: rgba(240, 248, 255, 0.856);
+    text-decoration: none;    
+}
+
+.tabella {
+    text-decoration: none;  
+    margin-top: 100px;  
+}
+
+.tabella table{
+    color: rgba(240, 248, 255, 0.856);  
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    border:floralwhite;
+    margin-left: 830px;
+}
+
+.immagine_pizza{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 350px;
+}
+
+
+

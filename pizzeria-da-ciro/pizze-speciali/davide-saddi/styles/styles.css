@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, Helvetica;
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#header {
+    font-family: 'Lobster', cursive;
+    background-image: url('../assets/forno.jpg');
+    font-size: 5em;
+    color: beige;
+    text-align: center;
+    background-size: cover;
+    padding-top: 200px;
+    height: 100px;
+    padding-bottom: 600px;
+}
+
+#left-sup {
+    padding-top: 10px; 
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#right-sup {
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 1px;
+    padding-left: 30px;
+}
+
+#title-center {
+    font-family: 'Lobster', cursive;
+    font-size: 4em;
+    text-align: center;
+}
+
+#cont-center {
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    text-align: center;
+}
+
+#table {
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    text-align: left;
+}
+
+#table-small {
+    font-family: 'Lobster';
+    font-size: 1.5em;
+    text-align: left;
+}
+
+input[type=submit]{
+    font-family: 'Lobster';
+    font-size: 1.3em;
+}
+#text-red{
+    font-family: 'Lobster';
+    font-size: 4em;
+    text-align: center;
+    background-color: red;
+}
+
+
+
+

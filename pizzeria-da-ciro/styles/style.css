@@ -41,7 +41,7 @@ fieldset {
     color: white;
     letter-spacing: 0.1em;
     padding-top: 64px;
-    text-shadow: 5px 5px 0 black;
+    /*text-shadow: 5px 5px 0 black;*/
     font-family: 'Staatliches';
     margin: 0;
 }

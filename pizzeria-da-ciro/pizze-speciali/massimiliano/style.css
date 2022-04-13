@@ -1,0 +1,69 @@
+body {
+    background-image: url("cianfrusaglie/La-casa-2-henrietta.webp");
+    }
+
+h1{
+   color: red; 
+   font-size: 120px;
+   font-family: 'Creepster', cursive;
+   text-shadow: 2px 2px black;
+}
+
+h2{
+    color: red;
+    font-size: 234 px;
+    font-family: 'Creepster', cursive;
+    margin-left: 500 px; 
+    text-shadow: 2px 2px black;
+}
+
+.pizza{
+    text-align: center;
+    border-color: black;
+}
+
+.ricetta {
+    margin-top: 500px;
+    margin-left: 2%; 
+    font-size: 30px;  
+    color: red;
+    font-family: 'Creepster', cursive;
+    text-decoration-color: black ;
+    position: absolute;
+    text-shadow: 2 px 2 px black; 
+}
+
+.ricetta ul {
+   text-shadow: 2px 2px black; 
+}
+ 
+.valorinutri {
+    font-size: 30px;
+    margin-left: 10%;
+    position: absolute;
+    margin-top: 800px;
+}
+
+.valorinutri table { 
+    text-align: left;
+    color: red;
+    border: solid red;
+    text-shadow: 2px 2px black;
+}
+
+
+.immagine img{
+    margin-top: 450px;
+    position: absolute;
+    margin-left: 60%;
+}
+
+button {
+    font-family: 'Creepster', cursive;
+    font-size: 25px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 200px;
+    background-color: red;
+}
+ 

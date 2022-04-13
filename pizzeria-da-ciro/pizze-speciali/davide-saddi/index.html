@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pizza speciale DavSad</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="./assets/favicon.ico">
+    </head>
+    <body>
+        <!--<h5> <a href="../../index.html">[Torna indietro] </a></h5>-->
+        <div id="header">
+            <h1>Pizza Speciale DavSad</h1>
+        </div>
+        <br><br>
+        <table align="center">
+            <tr>
+                <td>
+                    <div id="left-sup">
+                    <img align="left" src="./assets/pizza.jpg">
+                    </div>
+                </td>
+
+                <td>
+                    <div id="right-sup">
+                    <h3>Ricetta</h3> 
+                    <p>Pizza con impasto <strong>lievito madre </strong> <br>
+                    Sugo, mozzarella, polpo, cozze e surimi, il tutto guarnito nel post cottura da<br> <i>code di gambero </i>e una spolverata di <i>bottarga di muggine!</i> </p>
+                    <br> <strong><i>Venite a provarla!</i></strong>  
+                    </div> 
+                </td>
+            </tr>
+        </table>
+                  
+        
+        
+        
+            <div id="title-center">
+                <p><br>Ingredienti</p>
+            </div>
+          
+            <div id="cont-center">
+                <table align="center">
+                    <tr>
+                        <td> Sugo di pomodoro </td>
+                        <td> Mozzarella </td>
+                        <td> Polpo </td>
+                        <td> Surimi </td>
+                        <td> Code di gambero </td>
+                        <td> Bottarga di muggine </td>
+                    </tr>
+                    <tr>
+                        <td> <a href="https://it.wikipedia.org/wiki/Sugo"><img src="./assets/sugo.jpg" height="201" width="251"> </a></td>
+                        <td> <a href="https://it.wikipedia.org/wiki/Mozzarella"><img src="./assets/mozzarella.jpg" height="201" width="251"> </a> </td>
+                        <td> <a href="https://it.wikipedia.org/wiki/Octopus_vulgari"><img src="./assets/polpo.jpg" height="201" width="251"> </a> </td>
+                        <td> <a href="https://it.wikipedia.org/wiki/Surimi"><img src="./assets/surimi.jpg" height="201" width="251"> </a> </td>
+                        <td> <a href="https://it.wikipedia.org/wiki/Gambero"><img src="./assets/gambero.jpg" height="201" width="251"> </a> </td>
+                        <td> <a href="https://it.wikipedia.org/wiki/Bottarga"><img src="./assets/bottarga.jpg" height="201" width="251"> </a> </td>
+                    </tr>
+                </table>
+
+            </div>
+            
+            <div id="title-center">
+                <p><br>Scopri com'è fatta!</p>
+            </div>
+
+             <!--video Youtube-->
+        
+             <div>
+            <table align="center">
+                <tr>
+            <td><iframe width="600" height="400" src="https://www.youtube.com/embed/sv3TXMSv6Lw" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            </td>
+        </tr>
+            </table>
+    
+            </div>
+    
+            <!--fine video YouTube-->
+
+            <div id="cont-center">
+            <h3><br>Tabella nutrizionale<br></h3>
+            </div>
+
+            <div id="table">
+            <table border="0" align="center">
+                <il>
+                    <tr>
+                        <td><li></li></td>
+                        <td>Calorie:</td>
+                        <td> <strong>1100 Kcal;</strong> </td>
+                    </tr>
+
+                    <tr>
+                        <td><li></li></td>
+                        <td>Carboidrati:</td>
+                        <td> <strong>156g;</strong> </td>
+                    </tr>
+
+                    <tr>
+                        <td><li></li></td>
+                        <td>Grassi:</td>
+                        <td> <strong>18g;</strong> </td>
+                    </tr>
+                        
+                    <tr>
+                        <td><li></li></td>
+                        <td>Proteine:</td>
+                        <td> <strong>24g.</strong> </td>
+                    </tr>
+                </il>
+            </table>
+        </div>
+
+        <br><br><br><br>
+       
+        <h1 id="text-red">Offerta promozionale: 12,90 euro</h1>
+        <br>
+        <h2 id="cont-center">Vuoi ordinare? Compila il form!</h2>
+        
+        
+        <table border="0" align="center" id="table-small">
+        <form action="ordina.php" method="POST">
+           <tr>
+                <td>
+                    <label for="nome">Nome:</label>
+                </td>
+                <td>
+                    <label for="cognome">Cognome:</label>
+                </td>
+            </tr>
+
+                       <tr>
+                <td>
+                    <input type="text" id="nome" name="nome">
+                </td>
+                <td>
+                    <input type="text" id="cognome" name="cognome">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="via">Via</label>
+                </td>
+                <td>
+                    <label for="citta">Città</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="text" id="via" name="via">
+                </td>
+                <td>
+                    <input type="text" id="citta" name="citta">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <label for="telefono">Telefono</label>
+                </td>
+            </tr>
+
+            <tr align="center">
+                <td colspan="2">
+                    <input type="text"  id="telefono" name="telefono">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <label for="info">Informazioni aggiuntive</label>
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2">
+                    <textarea rows="7" cols="50"></textarea>
+                </td>
+
+            </tr>
+            
+
+            <tr>
+                <td colspan="2">
+                <fieldset>
+                    <legend>Servizi Aggiuntivi</legend>
+                    <input type="checkbox" id="posate" name="servizi"> Posate +15€<br>
+                    <input type="checkbox" id="tagliata" name="servizi"> Pizza Pretagliata +0.5€<br>
+                    <input type="checkbox" id="consegna" name="servizi"> Consegna rapida +5€<br>
+                </fieldset>
+                </td>
+            </tr>                      
+            
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend>Metodo di Pagamento</legend>
+                        <input type="radio" id="paypal" name="metodo"> PayPal<br>
+                        <input type="radio" id="contanti" name="metodo"> Contanti<br>
+                        <input type="radio" id="satispay" name="metodo"> Satispay<br>
+                    </fieldset>
+                </td>
+            </tr> 
+            
+            <tr>
+                <td colspan="2" align="center"><br>
+                    <input type="submit" value="Invia l'ordine">
+                </td>
+            </tr> 
+        </form>
+    </table>
+
+    <br>
+        <div id="text">
+            <a href="../../index.html">Torna indietro</a>
+        </div>
+    </body>
+</html>

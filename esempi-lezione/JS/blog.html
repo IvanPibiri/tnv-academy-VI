@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prova Promise!</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .container {
+            width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img id="headerImage" width="100%">
+        <h1>TNV Blog</h1>
+        <div id="blogHome">
+            Caricamento in corso...
+        </div>
+    </div>
+    <script>
+        // Recupero json dei post da URL e restituisce una JS Promise
+        const response = fetch('https://jsonplaceholder.typicode.com/posts');
+
+        response
+            // Eseguito se esecuzione Promise ha successo (ho recuperato i dati)
+            // "Converte" la response in json
+            // A sua volta restituisce una promise
+            .then(res => res.json()) 
+            // Pass il JSON alla funzione per l'aggiunta al DOM
+            .then(res => createPostList(res))
+            // Viene eseguito in caso di errore
+            .catch(err => console.log(err));
+
+        function createPostList(posts) {
+            // Recupera elemento con id blogHome
+            const blogHome = document.getElementById('blogHome');
+            // Rimuovo la scritta "Caricamento in corso..."
+            blogHome.innerText = '';
+
+            // Cicla i post
+            for (let post of posts) {
+                // Creiamo gli elementi html
+                const h2Element = document.createElement('h2');
+                const pElement = document.createElement('p');
+
+                // Modifichiamo il contenuto con la risposta della chiamata API
+                h2Element.innerHTML = `<a href="https://jsonplaceholder.typicode.com/posts/${post.id}">${post.title}</a>`;
+                pElement.innerText = post.body;
+
+                // Li aggiungiamo dentro #blogHome
+                blogHome.appendChild(h2Element);
+                blogHome.appendChild(pElement);
+            }
+        }
+
+        const image = fetch('pizza.jpg');
+
+        image
+            .then(res => res.blob())
+            .then(res => {
+                const headerImage = document.getElementById('headerImage');
+                headerImage.src = URL.createObjectURL(res);
+            });
+    </script>
+</body>
+
+</html>
