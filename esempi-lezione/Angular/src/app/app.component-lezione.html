@@ -1,0 +1,70 @@
+<h1>{{ title }}</h1>
+
+{{ diametro < 20 ? 'Normale' : 'Gigante' }}
+
+<hr>
+
+<button (click)="isVisible = !isVisible">{{ isVisible ? 'Hide' : 'Show' }}</button>
+<h1 [hidden]="!isVisible">Ciao!</h1>
+
+<hr>
+
+<ng-container *ngIf="isLoggedIn">
+    <h1>Utente Loggato</h1>
+    <p>La pizzeria piu sjdjaslk</p>
+</ng-container>
+
+<ng-container *ngIf="!isLoggedIn">
+    <h1>Utente non loggato</h1>
+    <p>La pizzeria piu sjdjaslk</p>
+</ng-container>
+
+<hr>
+
+<ul *ngIf="users">
+    <li *ngFor="let user of users">
+        {{ user.nome }}
+        {{ user.cognome }}
+    </li>
+</ul>
+
+<hr>
+
+<input type="text" [disabled]="isDisabled">
+<img [src]="imageUrl" [width]="imageSize">
+
+<button (click)="handleClick($event)">ClickME!</button>
+
+<hr>
+
+<input type="text" (keydown)="onKeyDown($event)" value="">
+
+<hr>
+
+<h1>{{ title | titlecase }}</h1>
+<h1>{{ price | currency:'CAD':'symbol-narrow':'4.2-2' }}</h1>
+<h1>{{ data | date: 'dd MMM yyyy' | uppercase}}</h1>
+<pre>{{ users | json}}</pre>
+
+<hr>
+
+<p class="red">Testo rosso</p>
+
+<ul *ngIf="users">
+    <li *ngFor="let user of users" [class]="user.gender === 'M' ? 'male' : 'female'">
+        {{ user.nome }}
+        {{ user.cognome }}
+    </li>
+</ul>
+
+<p [ngClass]="getClass(29)">Testo</p>
+
+<button (click)="isVisible = !isVisible">{{ isVisible ? 'Hide' : 'Show' }}</button>
+<h1 [class.low]="!isVisible">Ciao!</h1>
+
+<hr>
+<h1 [style.color]="'#FC0'">Io sono un titolo</h1>
+<h1 [ngStyle]="{ color: 'red', background: 'black'}">djsahdkasjhdka</h1>
+
+
+<button [class.btn-danger]="true">Prova button</button>
