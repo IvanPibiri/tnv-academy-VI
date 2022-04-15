@@ -1,0 +1,16 @@
+<form #loginForm="ngForm" (submit)="login(loginForm)">
+    <input
+        [ngModel]
+        name="username"
+        type="text" 
+        placeholder="username"
+    >
+
+    <input
+        [ngModel]
+        name="password"
+        type="password" 
+        placeholder="username"
+    >
+    <button type="submit">ADD</button>
+  </form>
