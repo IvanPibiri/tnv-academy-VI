@@ -1,0 +1,25 @@
+<form #pizzaForm="ngForm" (submit)="createPizza(pizzaForm)">
+    <input
+        [ngModel]
+        name="flavour"
+        placeholder="name"
+        type="text" 
+    >
+
+    <input
+        [ngModel]
+        name="description"
+        placeholder="description"
+
+        type="text" 
+    >
+
+    <input
+        [ngModel]
+        name="price"
+        placeholder="price"
+
+        type="text" 
+    >
+    <button type="submit">Create Pizza</button>
+  </form>

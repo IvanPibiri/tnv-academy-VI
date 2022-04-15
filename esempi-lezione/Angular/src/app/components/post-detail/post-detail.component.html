@@ -1,0 +1,6 @@
+<span class="danger" *ngIf="notFound">Post Not Found</span>
+<h1>{{ post?.title }} </h1>
+<p>{{ post?.body }} </p>
+
+<button class="btn btn-primary" (click)="navigate(-1)">Previous</button>
+<button class="btn btn-primary" (click)="navigate(1)">Next</button>
