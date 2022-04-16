@@ -1,5 +1,8 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { UtilityService } from 'src/app/services/utility.service';
+import { Router } from '@angular/router';
+import { Post } from 'src/app/models/posts';
+import { BackendApiService } from 'src/app/services/backend-api.service';
 
 @Component({
   selector: 'app-blog',
@@ -8,14 +11,26 @@ import { UtilityService } from 'src/app/services/utility.service';
 })
 export class BlogComponent implements OnInit {
 
-  result: number = 0;
+  posts: Post[] = [];
+  filteredPosts: Post[] = []
+  filter: string = '';
 
-  constructor(private utilityService: UtilityService) {
+  constructor(private backendAPIService: BackendApiService, private router: Router) {
   
   }
 
   ngOnInit(): void {
-    this.result = this.utilityService.sum(4, 9);
+    this.backendAPIService.getPosts().subscribe({
+      next: (res) => this.filteredPosts = this.posts = res
+    });
+  }
+
+  onTitleClick(event: number) {
+    this.router.navigateByUrl(`/posts/${event}`)
+  }
+
+  applyFilter(event: Event) {
+    this.filteredPosts = this.posts.filter(x => x.title.includes(`${event}`))
   }
 
 }

@@ -1,1 +1,4 @@
-<p>blog works!  {{ result }}</p>
+<input type="text" [(ngModel)]="filter" (ngModelChange)="applyFilter($event)">
+<div *ngFor="let post of filteredPosts">
+    <app-post-list-item [post]="post" (titleClick)="onTitleClick($event)"></app-post-list-item>
+</div>
